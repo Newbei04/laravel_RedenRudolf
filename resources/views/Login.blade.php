@@ -9,7 +9,7 @@
     <form action="/Login" method="post">
         <h1>LOGIN Form</h1>
         @csrf
-        <label for="LOGIN">Log In</label></label><input type="text" name="rerr_username"><br>
+        <label for="Username">Username: </label><input type="text" name="rerr_username"><br>
         <label for="rerr_password">Password: </label><input type="password" name="rerr_password"><br>
         <input type="submit" value="LOGIN"><br>
 

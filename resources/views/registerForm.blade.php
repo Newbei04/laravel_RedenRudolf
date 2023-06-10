@@ -23,7 +23,18 @@
             <option value="User">User</option>
         </select><br>
 
-        <input type="submit" value="REGISTER">
+        <div class="errors">
+            @if ($errors->any())
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{$error}}</li>
+                    @endforeach
+                </ul>
+            @endif
+        </div>
+
+        <input type="submit" value="REGISTER"><br>
+        <label for="login">Already Have an Account?</label><a href="Login">Log In Here</a>
     </form>
 </body>
 </html>
